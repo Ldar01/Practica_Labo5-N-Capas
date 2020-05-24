@@ -26,9 +26,21 @@
 	</table>
 	<br>
 	
+	<h3>Mostrar Estudiante</h3>
+	
 	<form th:action="@{/mostrarEstudiante}" method="post">
 		<label>Buscar por codigo de estudiante:</label> <input type="number" name="codigo"><br>
 		<input type="submit" value="Buscar">
+	</form>
+	<br>
+	
+	<form th:action="@{/insertarEstudiante}">
+		<input type="submit" value="Insertar nuevo Estudiante">
+	</form><br>
+	
+	<form th:action="@{/borrarEstudiante}" method= "post">
+	<label>Borrar por codigo de estudiante:</label> <input type="number" name="codigo"><br>
+		<input type="submit" value="Borrar">
 	</form>
 	
 </body>
